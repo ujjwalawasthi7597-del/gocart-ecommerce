@@ -1,0 +1,6 @@
+{
+  "name": "GoCart - Modern E-Commerce Platform",
+  "description": "A complete, production-ready e-commerce platform with catalog, cart, checkout, payments, user accounts, and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

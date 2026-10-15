@@ -1,0 +1,493 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_1",
+      "name": "GoCart Administrator",
+      "email": "admin@gocart.com",
+      "passwordHash": "$2b$10$5ay2/ku7iU5kwM5NTwRNEuFeRWGBHqtSDxxKrHeKhi.HqEqeQnk6a",
+      "role": "admin",
+      "phone": "+1 (555) 019-2834",
+      "status": "active",
+      "createdAt": "2026-01-10T08:00:00.000Z"
+    },
+    {
+      "id": "usr_cust_1",
+      "name": "Alex Mercer",
+      "email": "customer@gocart.com",
+      "passwordHash": "$2b$10$PiZHsDdpDWOSmqIbAQE3/OrkzBL92fQADfXoWjDwfD0Gp6cjiYJda",
+      "role": "customer",
+      "phone": "+1 (555) 749-3821",
+      "status": "active",
+      "createdAt": "2026-02-15T10:30:00.000Z"
+    }
+  ],
+  "addresses": [
+    {
+      "id": "addr_1",
+      "userId": "usr_cust_1",
+      "fullName": "Alex Mercer",
+      "phone": "+1 (555) 749-3821",
+      "street": "742 Evergreen Terrace, Suite 4B",
+      "city": "Portland",
+      "state": "OR",
+      "zipCode": "97201",
+      "country": "United States",
+      "isDefault": true
+    },
+    {
+      "id": "addr_2",
+      "userId": "usr_cust_1",
+      "fullName": "Alex Mercer (Studio)",
+      "phone": "+1 (555) 749-3821",
+      "street": "1200 Innovation Way",
+      "city": "Seattle",
+      "state": "WA",
+      "zipCode": "98101",
+      "country": "United States",
+      "isDefault": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_electronics",
+      "name": "Audio & Electronics",
+      "slug": "audio-electronics",
+      "description": "Precision acoustics, noise-canceling headphones, and desktop audio gear.",
+      "image": "/images/cat_audio_tech_1791788732150.jpg",
+      "isActive": true,
+      "productCount": 4
+    },
+    {
+      "id": "cat_fashion",
+      "name": "Apparel & Goods",
+      "slug": "apparel-goods",
+      "description": "Tailored essentials, raw denim, and durable organic textiles.",
+      "image": "/images/cat_fashion_style_1791788751971.jpg",
+      "isActive": true,
+      "productCount": 4
+    },
+    {
+      "id": "cat_home",
+      "name": "Home & Living",
+      "slug": "home-living",
+      "description": "Stoneware ceramics, sculptural vessels, and timeless living accents.",
+      "image": "/images/cat_home_living_1791788773381.jpg",
+      "isActive": true,
+      "productCount": 4
+    },
+    {
+      "id": "cat_wellness",
+      "name": "Grooming & Wellness",
+      "slug": "grooming-wellness",
+      "description": "Botanical formulations, organic skincare, and daily self-care rituals.",
+      "image": "/images/hero_gocart_lifestyle_1791788713972.jpg",
+      "isActive": true,
+      "productCount": 4
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_1",
+      "name": "Aether Precision Wireless Headphones",
+      "slug": "aether-precision-wireless-headphones",
+      "description": "Custom 45mm beryllium drivers with adaptive hybrid active noise cancellation, aerospace-grade aluminum chassis, and 38-hour battery longevity.",
+      "details": [
+        "45mm Custom Beryllium Acoustic Transducers",
+        "Hybrid Active Noise Cancellation with Transparency Mode",
+        "Lossless Bluetooth 5.3 with LDAC and aptX Adaptive",
+        "Memory foam ear cushions wrapped in supple full-grain leather",
+        "Fast USB-C charging: 15 mins provides 6 hours playback"
+      ],
+      "category": "Audio & Electronics",
+      "brand": "Aether Labs",
+      "price": 299,
+      "originalPrice": 349,
+      "discountPercent": 14,
+      "stock": 35,
+      "sku": "AETH-HP-BLK-01",
+      "images": [
+        "/images/cat_audio_tech_1791788732150.jpg",
+        "/images/hero_gocart_lifestyle_1791788713972.jpg"
+      ],
+      "rating": 4.9,
+      "reviewCount": 48,
+      "isFeatured": true,
+      "isAvailable": true,
+      "createdAt": "2026-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "prod_2",
+      "name": "Nomad Heavy Selvedge Denim Jacket",
+      "slug": "nomad-heavy-selvedge-denim-jacket",
+      "description": "Woven on vintage shuttle looms using 14.5oz raw Zimbabwean cotton with brass hardware and pleated front construction.",
+      "details": [
+        "14.5oz Raw Unsanforized Selvedge Denim",
+        "Custom antiqued solid brass buttons and rivets",
+        "Reinforced felled seams and interior selvedge ID line",
+        "Two chest flap pockets with concealed side hand warmers",
+        "Handcrafted in Okayama, Japan"
+      ],
+      "category": "Apparel & Goods",
+      "brand": "Atelier Nomad",
+      "price": 220,
+      "originalPrice": 260,
+      "discountPercent": 15,
+      "stock": 18,
+      "sku": "NMD-JKT-DNM-02",
+      "images": [
+        "/images/cat_fashion_style_1791788751971.jpg"
+      ],
+      "rating": 4.8,
+      "reviewCount": 32,
+      "isFeatured": true,
+      "isAvailable": true,
+      "createdAt": "2026-02-04T12:00:00.000Z"
+    },
+    {
+      "id": "prod_3",
+      "name": "Kuro Ribbed Stoneware Vase & Tea Bowl Set",
+      "slug": "kuro-ribbed-stoneware-vase-set",
+      "description": "Wheel-thrown ceramic vessel duo with tactile ribbed glazing, reduction fired at 1280°C for earthy mineral depth.",
+      "details": [
+        "Handcrafted stoneware clay with iron-flecked natural slip",
+        "Vase: 22cm height, 12cm diameter base",
+        "Matcha bowl: 180ml capacity, contoured rim for whisking",
+        "Water-tight interior glazing with raw exterior finish",
+        "Food-safe and lead-free minerals"
+      ],
+      "category": "Home & Living",
+      "brand": "Studio Kuro",
+      "price": 95,
+      "originalPrice": 120,
+      "discountPercent": 20,
+      "stock": 24,
+      "sku": "KURO-CER-VS-03",
+      "images": [
+        "/images/cat_home_living_1791788773381.jpg"
+      ],
+      "rating": 4.9,
+      "reviewCount": 19,
+      "isFeatured": true,
+      "isAvailable": true,
+      "createdAt": "2026-02-08T15:00:00.000Z"
+    },
+    {
+      "id": "prod_4",
+      "name": "Vanguard Leather Work Folio & Journal",
+      "slug": "vanguard-leather-work-folio",
+      "description": "Vegetable-tanned full grain Tuscan leather folio with brass locking clasp, designed to cradle an A5 journal, tablet, and fine pens.",
+      "details": [
+        "Full grain vegetable-tanned Italian cowhide",
+        "Solid milled brass latch with secure closure",
+        "Holds tablets up to 11 inches or standard A5 notebooks",
+        "Includes refillable 100gsm fountain pen friendly paper book",
+        "Ages with a rich, unique honey patina over years of use"
+      ],
+      "category": "Apparel & Goods",
+      "brand": "Vanguard Goods",
+      "price": 135,
+      "originalPrice": 155,
+      "discountPercent": 12,
+      "stock": 40,
+      "sku": "VNG-FOL-LTH-04",
+      "images": [
+        "/images/hero_gocart_lifestyle_1791788713972.jpg"
+      ],
+      "rating": 4.7,
+      "reviewCount": 27,
+      "isFeatured": true,
+      "isAvailable": true,
+      "createdAt": "2026-02-10T11:00:00.000Z"
+    },
+    {
+      "id": "prod_5",
+      "name": "Sylvan Botanical Restorative Face Oil",
+      "slug": "sylvan-botanical-restorative-face-oil",
+      "description": "Cold-pressed rosehip seed, squalane, and sea buckthorn oil formulation delivering essential fatty acids and antioxidants.",
+      "details": [
+        "30ml amber glass dropper bottle with UV protection",
+        "Formulated with 100% certified organic plant extracts",
+        "Non-comedogenic, lightweight rapid absorption profile",
+        "Subtle natural cedarwood and bergamot aroma",
+        "Cruelty-free and vegan certified"
+      ],
+      "category": "Grooming & Wellness",
+      "brand": "Sylvan Botanics",
+      "price": 58,
+      "originalPrice": 68,
+      "discountPercent": 14,
+      "stock": 50,
+      "sku": "SYLV-OIL-30ML-05",
+      "images": [
+        "/images/hero_gocart_lifestyle_1791788713972.jpg"
+      ],
+      "rating": 4.9,
+      "reviewCount": 41,
+      "isFeatured": false,
+      "isAvailable": true,
+      "createdAt": "2026-02-12T09:30:00.000Z"
+    },
+    {
+      "id": "prod_6",
+      "name": "Strata Minimal Aluminum Desk Stand",
+      "slug": "strata-minimal-aluminum-desk-stand",
+      "description": "CNC-machined anodized aluminum headphone stand with weighted base and integrated cable channel for clean workspace ergonomics.",
+      "details": [
+        "Aircraft-grade 6061 billet aluminum structure",
+        "Micro-suction silicone base pads for grip without residue",
+        "Curved leather rest cradle protects headphone headband",
+        "Precision bead-blasted and anodized finish",
+        "Weight: 680g for stable one-handed placement"
+      ],
+      "category": "Audio & Electronics",
+      "brand": "Aether Labs",
+      "price": 65,
+      "originalPrice": 75,
+      "discountPercent": 13,
+      "stock": 28,
+      "sku": "STR-STD-ALU-06",
+      "images": [
+        "/images/cat_audio_tech_1791788732150.jpg"
+      ],
+      "rating": 4.6,
+      "reviewCount": 15,
+      "isFeatured": false,
+      "isAvailable": true,
+      "createdAt": "2026-02-15T14:10:00.000Z"
+    },
+    {
+      "id": "prod_7",
+      "name": "Heavyweight Loopback Organic Cotton Tee",
+      "slug": "heavyweight-loopback-cotton-tee",
+      "description": "280gsm heavyweight combed organic cotton tee with bound ribbed collar and relaxed drop-shoulder silhouette.",
+      "details": [
+        "280 GSM 100% GOTS-certified Organic Combed Cotton",
+        "Pre-shrunk fabric to prevent post-wash distortion",
+        "Seamless tubular body knit on vintage circular frames",
+        "Durable double-needle topstitched hem and sleeves",
+        "Made ethically in Portugal"
+      ],
+      "category": "Apparel & Goods",
+      "brand": "Atelier Nomad",
+      "price": 48,
+      "originalPrice": 55,
+      "discountPercent": 12,
+      "stock": 65,
+      "sku": "NMD-TEE-WHT-07",
+      "images": [
+        "/images/cat_fashion_style_1791788751971.jpg"
+      ],
+      "rating": 4.8,
+      "reviewCount": 54,
+      "isFeatured": false,
+      "isAvailable": true,
+      "createdAt": "2026-02-18T16:00:00.000Z"
+    },
+    {
+      "id": "prod_8",
+      "name": "Dusk Hand-Poured Soy & Hinoki Candle",
+      "slug": "dusk-hand-poured-soy-candle",
+      "description": "Pure soy wax candle with Japanese Hinoki wood, smoky vetiver, and black pepper notes housed in reusable matte ceramic jar.",
+      "details": [
+        "250g pure golden soy wax with double untreated cotton wick",
+        "55+ hours clean soot-free burn time",
+        "Fragrance notes: Hinoki Cypress, Frankincense, Earthy Vetiver",
+        "Vessel can be repurposed as a desktop pen holder or planter",
+        "Poured by hand in small artisan batches"
+      ],
+      "category": "Home & Living",
+      "brand": "Studio Kuro",
+      "price": 42,
+      "originalPrice": 48,
+      "discountPercent": 12,
+      "stock": 30,
+      "sku": "KURO-CND-HNK-08",
+      "images": [
+        "/images/cat_home_living_1791788773381.jpg"
+      ],
+      "rating": 4.9,
+      "reviewCount": 22,
+      "isFeatured": false,
+      "isAvailable": true,
+      "createdAt": "2026-02-20T11:20:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_1",
+      "productId": "prod_1",
+      "userId": "usr_cust_1",
+      "userName": "Alex Mercer",
+      "rating": 5,
+      "comment": "The soundstage on the Aether headphones is astonishing. Build quality feels like something that will last a decade. ANC easily silences train commutes.",
+      "isVerifiedPurchase": true,
+      "createdAt": "2026-02-25T14:00:00.000Z"
+    },
+    {
+      "id": "rev_2",
+      "productId": "prod_2",
+      "userId": "usr_cust_1",
+      "userName": "Alex Mercer",
+      "rating": 5,
+      "comment": "Incredible selvedge jacket. Stiff at first as real raw denim should be, but molds into a perfect custom fit after a couple weeks of wear.",
+      "isVerifiedPurchase": true,
+      "createdAt": "2026-02-28T18:30:00.000Z"
+    }
+  ],
+  "carts": [
+    {
+      "userId": "usr_cust_1",
+      "items": [
+        {
+          "productId": "prod_3",
+          "quantity": 1
+        }
+      ],
+      "updatedAt": "2026-03-03T10:00:00.000Z"
+    }
+  ],
+  "wishlists": [
+    {
+      "userId": "usr_cust_1",
+      "productIds": [
+        "prod_4",
+        "prod_8"
+      ],
+      "updatedAt": "2026-03-03T10:00:00.000Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "cpn_welcome",
+      "code": "WELCOME10",
+      "discountType": "percentage",
+      "discountValue": 10,
+      "minOrderAmount": 40,
+      "maxDiscountAmount": 30,
+      "usageLimit": 500,
+      "usedCount": 14,
+      "validUntil": "2027-12-31T23:59:59.000Z",
+      "isActive": true
+    },
+    {
+      "id": "cpn_gocart20",
+      "code": "GOCART20",
+      "discountType": "percentage",
+      "discountValue": 20,
+      "minOrderAmount": 100,
+      "maxDiscountAmount": 60,
+      "usageLimit": 200,
+      "usedCount": 28,
+      "validUntil": "2027-12-31T23:59:59.000Z",
+      "isActive": true
+    },
+    {
+      "id": "cpn_super50",
+      "code": "SUPER50",
+      "discountType": "fixed",
+      "discountValue": 50,
+      "minOrderAmount": 250,
+      "usageLimit": 100,
+      "usedCount": 9,
+      "validUntil": "2027-12-31T23:59:59.000Z",
+      "isActive": true
+    },
+    {
+      "id": "cpn_freeship",
+      "code": "FREESHIP",
+      "discountType": "fixed",
+      "discountValue": 15,
+      "minOrderAmount": 50,
+      "usageLimit": 1000,
+      "usedCount": 42,
+      "validUntil": "2027-12-31T23:59:59.000Z",
+      "isActive": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1001",
+      "orderNumber": "GC-928104",
+      "userId": "usr_cust_1",
+      "customerName": "Alex Mercer",
+      "customerEmail": "customer@gocart.com",
+      "customerPhone": "+1 (555) 749-3821",
+      "shippingAddress": {
+        "fullName": "Alex Mercer",
+        "phone": "+1 (555) 749-3821",
+        "street": "742 Evergreen Terrace, Suite 4B",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201",
+        "country": "United States"
+      },
+      "items": [
+        {
+          "productId": "prod_1",
+          "name": "Aether Precision Wireless Headphones",
+          "price": 299,
+          "originalPrice": 349,
+          "quantity": 1,
+          "image": "/images/cat_audio_tech_1791788732150.jpg",
+          "sku": "AETH-HP-BLK-01"
+        }
+      ],
+      "subtotal": 299,
+      "discount": 29.9,
+      "couponCode": "WELCOME10",
+      "shippingFee": 0,
+      "tax": 21.53,
+      "total": 290.63,
+      "paymentMethod": "card",
+      "paymentStatus": "paid",
+      "orderStatus": "Delivered",
+      "trackingCarrier": "FedEx Express",
+      "trackingNumber": "FDX-83921094-US",
+      "notes": "Delivered to front door security desk.",
+      "createdAt": "2026-02-24T09:15:00.000Z",
+      "updatedAt": "2026-02-27T14:20:00.000Z"
+    },
+    {
+      "id": "ord_1002",
+      "orderNumber": "GC-941823",
+      "userId": "usr_cust_1",
+      "customerName": "Alex Mercer",
+      "customerEmail": "customer@gocart.com",
+      "customerPhone": "+1 (555) 749-3821",
+      "shippingAddress": {
+        "fullName": "Alex Mercer",
+        "phone": "+1 (555) 749-3821",
+        "street": "742 Evergreen Terrace, Suite 4B",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201",
+        "country": "United States"
+      },
+      "items": [
+        {
+          "productId": "prod_2",
+          "name": "Nomad Heavy Selvedge Denim Jacket",
+          "price": 220,
+          "originalPrice": 260,
+          "quantity": 1,
+          "image": "/images/cat_fashion_style_1791788751971.jpg",
+          "sku": "NMD-JKT-DNM-02"
+        }
+      ],
+      "subtotal": 220,
+      "discount": 0,
+      "shippingFee": 0,
+      "tax": 17.6,
+      "total": 237.6,
+      "paymentMethod": "card",
+      "paymentStatus": "paid",
+      "orderStatus": "Shipped",
+      "trackingCarrier": "UPS Ground",
+      "trackingNumber": "1Z9999999999999999",
+      "notes": "In transit to distribution hub in Seattle.",
+      "createdAt": "2026-03-01T11:45:00.000Z",
+      "updatedAt": "2026-03-02T16:00:00.000Z"
+    }
+  ],
+  "newsletters": []
+}
